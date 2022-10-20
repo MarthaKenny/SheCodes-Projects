@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nigerian Jollof</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+      color: rgb(194, 82, 2);
+      font-weight: 1500;
+      font-size: 1000;
+      padding: 0 auto;
+      margin-bottom: 0;
+      border: 2px solid rgb(26, 111, 82);
+      border-radius: 30px;
+      line-height: 2;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 17px;
+      color: rgb(26, 111, 82);
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      padding: 5px;
+      margin: 8px;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      padding-bottom: 0px;
+      max-width: 90%;
+      border-radius: 1000px;
+    }
+    p {
+      line-height: 2;
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 10px;
+      margin: 0;
+      padding: 10px 20px;
+    }
+    .learnMore {
+      text-decoration: none;
+      padding: 20px 20px;
+      color: rgb(16, 186, 130);
+      margin: 0 auto;
+    }
+    .learnMore:hover {
+      text-decoration: underline;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      border: 1px solid rgb(26, 111, 82);
+      padding: 20px;
+      background-color: rgba(26, 111, 82);
+      color: white;
+      border-radius: 40px;
+      box-shadow: 0px 5px 5px rgb(118, 85, 85);
+      font-weight: 600;
+      transition: all 200ms ease-in-out;
+    }
+    button:hover {
+      opacity: 0.8;
+      cursor: pointer;
+      color: rgb(26, 111, 82);
+      background-color: white;
+    }
+    .footer {
+      color: rgb(26, 111, 82);
+      text-decoration: none;
+      padding: 0px 15px;
+    }
+
+    .link {
+      text-decoration: none;
+      color: rgb(45, 97, 173);
+    }
+    .link:hover {
+      text-decoration: underline;
+    }
+
+    .wholeBody {
+      max-width: 80%;
+      display: block;
+      margin: 0 auto;
+      background-color: #e0ead9;
+      border-radius: 10px;
+      padding: 5px;
+    }
+    body {
+      color: rgb(26, 111, 82);
+    }
+  </style>
+  <body>
+    <div class="wholeBody">
+      <header>
+        <h1>I Love Nigerian Jollof Rice</h1>
+        <h2>Especially With Fried Chicken🍗</h2>
+      </header>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/048/406/original/jollofRice-removebg-preview_%281%29.png?1665681541"
+        alt="Picture of jollof Rice"
+      />
+      <p>
+        Nigerian Jollof Rice, also known as <b>Party Jollof</b>, is a rich and
+        incredibly tasty west African one-pot Meal. It is a very versatile dish,
+        and it is usually made from scratch using Rice, Tomatoes, fresh peppers,
+        Tomato paste, Scotch bonnet, Onions, Salt, and other spices. Jollof rice
+        is one of the most common West African dishes eaten in the regions of
+        Nigeria, Ghana, Togo, Senegal, Gambia, Mali. It is inexpensive and easy
+        to make, yet delicious.
+      </p>
+      <a
+        class="learnMore"
+        href="https://en.wikipedia.org/wiki/Jollof_rice"
+        target="_blank"
+        >Learn more on Wikipedia</a
+      >
+      <br />
+      <button>👉WANT SOME?</button>
+      <hr />
+      <footer>
+        <div class="footer">
+          This page was built by
+          <a
+            class="link"
+            href="https://www.linkedin.com/in/marthasuleiman"
+            target="_blank"
+            >Martha Suleiman</a
+          >
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      function wantSome() {
+        let Name = prompt("What is your First Name");
+        let Email = prompt("What is your Email Address?");
+        alert(
+          "Hi " + Name + "! We will get in touch by mail. Have a nice day 🤗"
+        );
+      }
+      let getSome = document.querySelector("button");
+      getSome.addEventListener("click", wantSome);
+    </script>
+  </body>
+</html>
